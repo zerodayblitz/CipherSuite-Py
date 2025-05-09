@@ -1,25 +1,3 @@
-# def encrypt_vernam(plaintext: str, key: str) -> str:
-#     if len(plaintext) != len(key):
-#         raise ValueError("Key must be the same length as plaintext.")
-#
-#     ciphertext = ''
-#     for p_char, k_char in zip(plaintext, key):
-#         p_code = ord(p_char)
-#         k_code = ord(k_char)
-#         c_code = p_code ^ k_code
-#         ciphertext += chr(c_code)
-#     return ciphertext
-# def decrypt_vernam(ciphertext: str, key: str) -> str:
-#     if len(ciphertext) != len(key):
-#         raise ValueError("Key must be the same length as plaintext.")
-#     plaintext = ''
-#     for c_char, k_char in zip(ciphertext, key):
-#         c_code = ord(c_char)
-#         k_code = ord(k_char)
-#         p_code = c_code ^ k_code
-#         plaintext += chr(p_code)
-#     return plaintext
-
 import base64
 
 def encrypt_vernam(plaintext: str, key: str) -> str:
