@@ -1,35 +1,3 @@
-# import random
-#
-# def encrypt_stream(plaintext: str, key: str) -> str:
-#     if not key:
-#         raise ValueError("Key cannot be empty.")
-#
-#     seed = sum(ord(char) for char in key)
-#     random.seed(seed)
-#
-#     ciphertext = ''
-#     for char in plaintext:
-#         p_code = ord(char)
-#         k_code = random.randint(0, 255)
-#         c_code = p_code ^ k_code
-#         ciphertext += chr(c_code)
-#     return ciphertext
-#
-# def decrypt_stream(ciphertext: str, key: str) -> str:
-#     if not key:
-#         raise ValueError("Key cannot be empty.")
-#
-#     seed = sum(ord(char) for char in key)
-#     random.seed(seed)
-#
-#     plaintext = ''
-#     for char in ciphertext:
-#         c_code = ord(char)
-#         k_code = random.randint(0, 255)
-#         p_code = c_code ^ k_code
-#         plaintext += chr(p_code)
-#     return plaintext
-
 import base64
 import random
 
